@@ -10,8 +10,8 @@ parser.add_argument('folder1')
 parser.add_argument('folder2')
 args=parser.parse_args()
 
-path1='/content/'+args.folder1
-path2= '/content/'+args.folder2
+path1=args.folder1
+path2=args.folder2
 os.mkdir(path2)
 os.chdir(path1)
 
